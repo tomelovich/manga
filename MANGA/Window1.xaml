@@ -1,0 +1,109 @@
+﻿<Window x:Class="MANGA.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MANGA"
+        mc:Ignorable="d"
+        Title="Мой профиль" Height="450" Width="800" Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="0" Grid.RowSpan="1" Background="#e8d58c"></Border>
+        <Viewbox Grid.Column="0" Grid.RowSpan="3"  Grid.Row="1">
+            <Ellipse  Height="80" Width="80">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="1641194206_genshinimpact-yae-miko.jpg"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Никнейм" Foreground="White" Width="80"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="Обо мне:" Foreground="White" Width="80"/>
+        </Viewbox>
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1">
+            <TextBlock Foreground="White" Text="Пол:"></TextBlock>
+            <TextBlock  Foreground="White" Text="Мужской"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="1">
+            <TextBlock Foreground="White" Text="Страна:"></TextBlock>
+            <TextBlock  Foreground="White" Text="Беларусь"></TextBlock>
+        </StackPanel>
+        <TextBlock Foreground="White" Text="lo oh ono o лj ываывааааааааааааааааааааа аааываываываываааааааааааааааааывыв выаываывcvcvvcvcv sd fsd ffffffffffff dfsdfsdfsdfsdf ffffffffffff fffffffffffj ffffcv sd fsd fs dfcvа"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="4" Grid.RowSpan="2" TextWrapping="Wrap"/>
+        <Viewbox Grid.Row="4" Grid.Column="1">
+            <TextBlock Text="Список прочитанного:" Foreground="White"/>
+        </Viewbox>
+        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="100" Grid.RowSpan="4">
+            <Viewbox>
+                <StackPanel HorizontalAlignment="Left" Height="160" Width="auto" Background="#e8d58c" Orientation="Horizontal">
+                    <Button Margin="4">
+                        <Image Source="WLnyVfKR4BrM_250x350.jpg"/>
+                    </Button>
+                    <Button Margin="4" Click="Button_Click1">
+                        <Image  Source="1641728000_1.jpg"/>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="boocover.jpg"/>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="vAjTsKRZ58Rv_250x350.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="10872393_0.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="715.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="Stardust_Crusaders.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="full_______________-____________-1.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="KarvIrFW9BkG_250x350.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="2b60b87f998995c2e0d88f8fbd2ffb3b29772845r1-335-527v2_hq.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="Naruto-manga.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="KyXPXgDJUNGL_250x350.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="230px-Tobaku_Mokushiroku_Kaiji.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="cover.jpg"></Image>
+                    </Button>
+                    <Button Margin="4">
+                        <Image Source="650.jpg"></Image>
+                    </Button>
+                </StackPanel>
+            </Viewbox>
+        </ScrollViewer>
+       
+    </Grid>
+</Window>

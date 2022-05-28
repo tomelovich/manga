@@ -1,0 +1,59 @@
+﻿<Window x:Class="MANGA.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MANGA"
+        mc:Ignorable="d"   
+        Title="Магическая битва" Height="450" Width="800" Background="Black">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}" x:Key="BorderlessButton">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="0" Grid.RowSpan="1" Background="#e8d58c"></Border>
+        <Image Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" Source="1641728000_1.jpg"></Image>
+        <Viewbox Grid.Row="1" Grid.Column="1">
+            <TextBlock Foreground="White" HorizontalAlignment="Center" Text="Магическая битва"/>
+        </Viewbox>
+        <TextBlock Grid.Column="3" FontSize="14" Grid.ColumnSpan="4" Grid.Row="2" Grid.RowSpan="2" Foreground="White" TextWrapping="Wrap" Text="Талантливого Юдзи школьная жизнь не привлекает. Всё изменилось, когда он становится частью клуба оккультных исследований и находит (съедает) один из пальцев Проклятого духа по имени «Сукуна»."/>
+        <Button Style="{StaticResource BorderlessButton}" Foreground="White" Grid.Column="3" Grid.Row="6" Width="60" Height="20" Content="Главы"/>
+        <Button Style="{StaticResource BorderlessButton}" Foreground="White" Grid.Column="4" Grid.Row="6" Width="80" Height="20" Content="Комментарии"/>
+        <ComboBox Grid.Row="5" Grid.Column="1" Background="#e8d58c" Width="100" Height="20">
+            <ComboBoxItem Content="В планах"></ComboBoxItem>
+            <ComboBoxItem Content="Читаю"></ComboBoxItem>
+            <ComboBoxItem Content="Прочитано"></ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
